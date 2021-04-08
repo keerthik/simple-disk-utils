@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 82687a06e60640148a87b59205a60790
-timeCreated: 1477575654
+guid: d24c477b3705f4ec1bf93c25ebbf18ac
+timeCreated: 1477575642
 licenseType: Pro
 PluginImporter:
   serializedVersion: 1
@@ -18,7 +18,7 @@ PluginImporter:
     Editor:
       enabled: 1
       settings:
-        CPU: x86_64
+        CPU: x86
         DefaultValueInitialized: true
         OS: Windows
     Linux:
@@ -54,11 +54,11 @@ PluginImporter:
     Win:
       enabled: 1
       settings:
-        CPU: None
+        CPU: AnyCPU
     Win64:
       enabled: 1
       settings:
-        CPU: AnyCPU
+        CPU: None
     WindowsStoreApps:
       enabled: 0
       settings:
