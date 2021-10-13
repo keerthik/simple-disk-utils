@@ -1,0 +1,20 @@
+{
+  "name": "com.dikra.diskutils",
+  "version": "1.2.0",
+  "displayName": "Simple Disk Utils",
+  "description": "Useful cross-platform analysis of device disk",
+  "unity": "2020.3",
+  "dependencies": {
+  },
+  "keywords": [
+    "Disk",
+    "Memory",
+    "Hard drive"
+  ],
+  "author": {
+    "name": "M Dikra Prasetya",
+    "email": "m.dikra.prasetya@gmail.com",
+    "url": "https://github.com/dkrprasetya/simple-disk-utils"
+  },
+  "type": "library"
+}
