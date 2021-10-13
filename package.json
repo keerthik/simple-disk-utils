@@ -2,7 +2,7 @@
   "name": "com.dikra.diskutils",
   "version": "1.2.0",
   "displayName": "Simple Disk Utils",
-  "description": "Useful cross-platform analysis of device disk",
+  "description": "Useful cross-platform analysis of device disk. Updated by Active Theory Inc for modern UPM support",
   "unity": "2020.3",
   "dependencies": {
   },
