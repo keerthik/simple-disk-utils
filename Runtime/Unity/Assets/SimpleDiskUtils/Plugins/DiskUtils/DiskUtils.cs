@@ -173,15 +173,25 @@ namespace SimpleDiskUtils
 #endif
 
 #elif UNITY_ANDROID
-	
+	/// <summary>
+	/// Checks the available space.
+	/// </summary>
+	/// <returns>The available space in MB.</returns>
+	/// <param name="path">Finds the space remaining in the disk which this path leads to. Default is internal storage</param>
+	public static int CheckAvailableSpace(string path){
+		AndroidJavaClass dataUtils = new AndroidJavaClass ("com.dikra.diskutils.DiskUtils");
+		return dataUtils.CallStatic<int>("availableSpace", path);
+	}
+
+
 	/// <summary>
 	/// Checks the available space.
 	/// </summary>
 	/// <returns>The available space in MB.</returns>
 	/// <param name="isExternalStorage">If set to <c>true</c> is external storage.</param>
 	public static int CheckAvailableSpace(bool isExternalStorage = true){
-	AndroidJavaClass dataUtils = new AndroidJavaClass ("com.dikra.diskutils.DiskUtils");
-	return dataUtils.CallStatic<int>("availableSpace", isExternalStorage);
+		AndroidJavaClass dataUtils = new AndroidJavaClass ("com.dikra.diskutils.DiskUtils");
+		return dataUtils.CallStatic<int>("availableSpace", isExternalStorage);
 	}
 
 	/// <summary>
