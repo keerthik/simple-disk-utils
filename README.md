@@ -1,3 +1,7 @@
+This library is maintained by Active Theory Inc.
+
+This is a fork of the `simple-disk-utils` asset by M Dikra Prasetya, Available on Unity Asset Store: http://u3d.as/qF1.
+
 # simple-disk-utils
 Disk/storage capacity check helper methods for Windows, OSX, iOS, and Android platform. 
 
@@ -6,10 +10,6 @@ Simply checks available, busy, and total storage space of your platform. File ma
 The implementation for each platforms are also can be found in this repository.
 
 If you have any idea on improvement or anything, please feel free to contribute!
-
-Available on Unity Asset Store: http://u3d.as/qF1
-
-Copyright (c) 2016  M Dikra Prasetya
 
 ## Implemented Methods
 ```
