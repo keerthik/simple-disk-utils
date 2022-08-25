@@ -2,7 +2,7 @@
 
 Class: DiskUtils.cs
 ==============================================
-Last update: 2016-05-12  (by Dikra)
+Last update: 2022-08-24  (by keerthiko)
 ==============================================
 
 Copyright (c) 2016  M Dikra Prasetya
@@ -173,7 +173,8 @@ namespace SimpleDiskUtils
 #endif
 
 #elif UNITY_ANDROID
-	private static const string package_domain = "com.activetheoryinc.diskutils";
+	private const string package_domain = "com.activetheoryinc.diskutils";
+	// private const string package_domain = "com.dikra.diskutils";
 	/// <summary>
 	/// Checks the available space.
 	/// </summary>
