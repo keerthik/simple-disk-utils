@@ -173,13 +173,14 @@ namespace SimpleDiskUtils
 #endif
 
 #elif UNITY_ANDROID
+	private static const string package_domain = "com.activetheoryinc.diskutils";
 	/// <summary>
 	/// Checks the available space.
 	/// </summary>
 	/// <returns>The available space in MB.</returns>
 	/// <param name="path">Finds the space remaining in the disk which this path leads to. Default is internal storage</param>
 	public static int CheckAvailableSpace(string path){
-		AndroidJavaClass dataUtils = new AndroidJavaClass ("com.dikra.diskutils.DiskUtils");
+		AndroidJavaClass dataUtils = new AndroidJavaClass ($"{package_domain}.DiskUtils");
 		return dataUtils.CallStatic<int>("availableSpace", path);
 	}
 
@@ -190,7 +191,7 @@ namespace SimpleDiskUtils
 	/// <returns>The available space in MB.</returns>
 	/// <param name="isExternalStorage">If set to <c>true</c> is external storage.</param>
 	public static int CheckAvailableSpace(bool isExternalStorage = true){
-		AndroidJavaClass dataUtils = new AndroidJavaClass ("com.dikra.diskutils.DiskUtils");
+		AndroidJavaClass dataUtils = new AndroidJavaClass ($"{package_domain}.DiskUtils");
 		return dataUtils.CallStatic<int>("availableSpace", isExternalStorage);
 	}
 
@@ -200,7 +201,7 @@ namespace SimpleDiskUtils
 	/// <returns>The total space in MB.</returns>
 	/// <param name="isExternalStorage">If set to <c>true</c> is external storage.</param>
 	public static int CheckTotalSpace(bool isExternalStorage = true){
-	AndroidJavaClass dataUtils = new AndroidJavaClass ("com.dikra.diskutils.DiskUtils");
+	AndroidJavaClass dataUtils = new AndroidJavaClass ($"{package_domain}.DiskUtils");
 	return dataUtils.CallStatic<int>("totalSpace", isExternalStorage);
 	}
 
@@ -210,7 +211,7 @@ namespace SimpleDiskUtils
 	/// <returns>The busy space in MB.</returns>
 	/// <param name="isExternalStorage">If set to <c>true</c> is external storage.</param>
 	public static int CheckBusySpace(bool isExternalStorage = true){
-	AndroidJavaClass dataUtils = new AndroidJavaClass ("com.dikra.diskutils.DiskUtils");
+	AndroidJavaClass dataUtils = new AndroidJavaClass ($"{package_domain}.DiskUtils");
 	return dataUtils.CallStatic<int>("busySpace", isExternalStorage);
 	}
 
