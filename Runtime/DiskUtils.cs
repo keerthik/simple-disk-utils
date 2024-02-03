@@ -217,7 +217,7 @@ namespace SimpleDiskUtils
 	}
 
 	
-#elif UNITY_IOS
+#elif UNITY_IOS || UNITY_VISIONOS
 	
 	[DllImport ("__Internal")]
 	private static extern ulong getAvailableDiskSpace();
